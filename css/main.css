@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    background-color: linen;    
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+text-align: center;
+font-size: 3em;
+}
+
+
+
+table{
+background-color: whitesmoke;
+text-align: center;
+border-spacing: 0;
+border-radius: 5px;
+border: 1px solid lightgray;
+margin: 0 auto;
+
+
+}
+
+td{
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid lightgray;
+    padding:20px;
+
+}
+
+.actions{
+    column-span: 3; 
+}
+
+.read-btn{
+    background-color: lightblue;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.update-btn{
+    background-color: lightgoldenrodyellow;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.delete-btn{
+    background-color: red;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.details-btn{
+    background-color:lightpink;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 20%;
+    padding: 3px;
+    background-color: oldlace;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.book-image{
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+}
+.arrow{
+    cursor: pointer;
+}
+
+.add-section{
+    display: inline-block;
+    /* margin: auto; */
+    width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.add-book {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.paging{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+.page{
+    padding: 5px;
+cursor: pointer;  
+}
+
+.top{
+    color:black;
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+
+}
+.extras{
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+justify-content: space-around 
+}

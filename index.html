@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book Shop</title>
+</head>
+
+<body>
+     <div class="modal" hidden>
+        <button onclick="onCloseModal()">Close</button>
+        <h5></h5>
+        <span></span>
+        <p></p>
+    </div>
+    <a name="top"></a>
+    <h1>PaperCuts</h1>
+    <section class="books-container">
+        <table class="books-table">
+            <thead>
+                <tr>
+                    <th> ID <span class="arrow" onclick="onSetSortLast('id')">🔽</span><span class="arrow"
+                            onclick="onSetSortFirst('id')">🔼</span> </th>
+                    <th> Title <span class="arrow" onclick="onSetSortLast('bookName')">🔽</span><span class="arrow"
+                            onclick="onSetSortFirst('bookName')">🔼</span> </th>
+                    <th> Price <span class="arrow" onclick="onSetSortLast('price')">🔽</span><span class="arrow"
+                            onclick="onSetSortFirst('price')">🔼</span> </th>
+                    <th> Image </th>
+                    <th> Rate <span class="arrow" onclick="onSetSortLast('rate')">🔽</span><span class="arrow"
+                            onclick="onSetSortFirst('rate')">🔼</span> </th>
+                    <th colspan="4" class="actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    <div class="container">
+
+       
+    <div class="extras" >
+        <section class="add-section">
+            <input name="add" type="text" placeholder="Add Book Name" />
+            <input name="price" type="number" placeholder="Add Book Price" />
+            <botton class="add-book" onclick="onAddBook()">Add Book</botton>
+        </section>
+        <table class="paging">
+            <tr>
+                <td class="page page-down" onclick="onPageIdx('down')"> ⏪ </td>
+                <td class="page page-1" onclick="onPageIdx(1)"> 1️⃣ </td>
+                <td class="page page-2" onclick="onPageIdx(2)"> 2️⃣ </td>
+                <td class="page page-3" onclick="onPageIdx(3)"> 3️⃣ </td>
+                <td class="page page-up" onclick="onPageIdx('up')"> ⏩ </td>
+            </tr>
+            <tr>
+            <td colspan="5" class="page" onclick="onPageIdx('all')">Show All Books</td>
+            </tr>
+        </table>
+        <a class="top" href="#top">Up, Up And Away</a>
+    </div>
+      
+    </div>
+    
+    <script src="js/bookshop-storage.js"></script>
+    <script src="js/bookshop-service.js"></script>
+    <script src="js/bookshop-controller.js"></script>
+</body>
+
+</html>
